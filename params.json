@@ -1,0 +1,8 @@
+[
+  {"ParameterKey": "VpcId", "ParameterValue": "vpc-01033688de7485a66"},
+  {"ParameterKey": "PublicSubnetIds", "ParameterValue": "subnet-0e17ebcaa4ded4f49,subnet-0630e86419aeabf3d"},
+  {"ParameterKey": "PrivateSubnetIds", "ParameterValue": "subnet-07cb4a61b291b6c83,subnet-0715eb78c250e6b67"},
+  {"ParameterKey": "DBUsername", "ParameterValue": "admin"},
+  {"ParameterKey": "DBPassword", "ParameterValue": "admin1234"},
+  {"ParameterKey": "AlertEmail", "ParameterValue": "roshik.rasheed-pk@nagarro.com"}
+]
