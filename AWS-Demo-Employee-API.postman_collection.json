@@ -1,21 +1,12 @@
 {
   "info": {
-    "name": "AWS Demo - Employee Management API",
+    "_postman_id": "be916f58-7990-41d9-b139-b9ae5fbaeac1",
+    "name": "AWS Demo  APP APIS",
     "description": "Spring Boot Employee Management API - AWS Assignment L1 (ECS Fargate + RDS). Set the `baseUrl` collection variable to either http://localhost:8080 (local) or your ALB DNS name, e.g. http://aws-demo-alb-123456789.ap-south-1.elb.amazonaws.com",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5323905",
+    "_collection_link": "https://go.postman.co/collection/5323905-be916f58-7990-41d9-b139-b9ae5fbaeac1?source=collection_link"
   },
-  "variable": [
-    {
-      "key": "baseUrl",
-      "value": "http://localhost:8080",
-      "type": "string"
-    },
-    {
-      "key": "employeeId",
-      "value": "",
-      "type": "string"
-    }
-  ],
   "item": [
     {
       "name": "Health & Ping",
@@ -27,8 +18,13 @@
             "header": [],
             "url": {
               "raw": "{{baseUrl}}/actuator/health",
-              "host": ["{{baseUrl}}"],
-              "path": ["actuator", "health"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "actuator",
+                "health"
+              ]
             },
             "description": "Used by the ALB target group and ECS health check."
           },
@@ -41,8 +37,14 @@
             "header": [],
             "url": {
               "raw": "{{baseUrl}}/api/employees/ping",
-              "host": ["{{baseUrl}}"],
-              "path": ["api", "employees", "ping"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "employees",
+                "ping"
+              ]
             },
             "description": "Lightweight endpoint showing which task/host served the request - handy for demoing ECS scaling."
           },
@@ -60,8 +62,13 @@
             "header": [],
             "url": {
               "raw": "{{baseUrl}}/api/employees",
-              "host": ["{{baseUrl}}"],
-              "path": ["api", "employees"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "employees"
+              ]
             }
           },
           "response": []
@@ -73,8 +80,14 @@
             "header": [],
             "url": {
               "raw": "{{baseUrl}}/api/employees/{{employeeId}}",
-              "host": ["{{baseUrl}}"],
-              "path": ["api", "employees", "{{employeeId}}"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "employees",
+                "{{employeeId}}"
+              ]
             }
           },
           "response": []
@@ -116,8 +129,13 @@
             },
             "url": {
               "raw": "{{baseUrl}}/api/employees",
-              "host": ["{{baseUrl}}"],
-              "path": ["api", "employees"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "employees"
+              ]
             },
             "description": "Creates a new employee. On success, the response's id is automatically saved into the {{employeeId}} collection variable for use by the other requests."
           },
@@ -139,8 +157,14 @@
             },
             "url": {
               "raw": "{{baseUrl}}/api/employees/{{employeeId}}",
-              "host": ["{{baseUrl}}"],
-              "path": ["api", "employees", "{{employeeId}}"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "employees",
+                "{{employeeId}}"
+              ]
             }
           },
           "response": []
@@ -152,8 +176,14 @@
             "header": [],
             "url": {
               "raw": "{{baseUrl}}/api/employees/{{employeeId}}",
-              "host": ["{{baseUrl}}"],
-              "path": ["api", "employees", "{{employeeId}}"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "employees",
+                "{{employeeId}}"
+              ]
             }
           },
           "response": []
@@ -174,14 +204,29 @@
             },
             "url": {
               "raw": "{{baseUrl}}/api/employees",
-              "host": ["{{baseUrl}}"],
-              "path": ["api", "employees"]
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "employees"
+              ]
             },
             "description": "Sends deliberately invalid data to demonstrate the 400 Bad Request + field error map response from the GlobalExceptionHandler."
           },
           "response": []
         }
       ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://aws-de-Appli-Qtby9dDc5kaG-915945157.ap-south-1.elb.amazonaws.com"
+    },
+    {
+      "key": "employeeId",
+      "value": ""
     }
   ]
 }
