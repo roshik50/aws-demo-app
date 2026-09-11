@@ -172,4 +172,3 @@ If doing this manually instead:
       ALB URL loading the app, scaling event, CloudFormation change set + stack, CloudWatch
       dashboard, alarm + SNS email, Container Insights, CloudWatch Logs.
 - [ ] This repository (code) + working ALB URL while the stack is up.
-"# aws-demo-app" 
