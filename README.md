@@ -99,7 +99,7 @@ docker run -p 8080:8080 --env-file .env aws-demo-app
 6. Create a dedicated **RDS security group** that allows inbound port `3306` only from the
    ECS service's security group (not `0.0.0.0/0`).
 7. Under Additional configuration, enable **Automated backups** and set a **retention period**
-   (e.g., 7 days) — note this value for your screenshots/deliverable.
+   (e.g., 1 days) — note this value for your screenshots/deliverable.
 8. Create the database and note the endpoint once available.
 
 ### 2. Container Deployment — ECS Fargate behind an ALB
